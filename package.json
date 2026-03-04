@@ -1,0 +1,22 @@
+{
+  "name": "contactsactivity",
+  "version": "1.0.0",
+  "description": "API list of contacts ",
+  "keywords": [
+    "List",
+    "API"
+  ],
+  "license": "ISC",
+  "author": "Alex Calizaya",
+  "type": "commonjs",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "body-parser": "^2.2.2",
+    "dotenv": "^17.3.1",
+    "express": "^5.2.1",
+    "mongodb": "^7.1.0"
+  }
+}
