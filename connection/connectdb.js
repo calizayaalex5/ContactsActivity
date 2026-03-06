@@ -4,14 +4,14 @@ const dotenv = require('dotenv');
 dotenv.config();
 
 const uri = process.env.MONGODB_URI;
-let _db;
+let _db; //variable para almacenar la conexion
 
 const initDb = (callback) => {
     if (_db) {
-        console.warn('Trying to init DB again!');
+        console.warn('Db is already initialized!');
         return callback(null, _db);
-    } else {
-        MongoClient.connect(uri, { useNewUrlParser: true, useUnifiedTopology: true })
+    }
+        MongoClient.connect(uri)
             .then(client => {
                 _db = client.db();
                 console.log('DB initialized - connected to: ' + uri);
@@ -21,5 +21,16 @@ const initDb = (callback) => {
                 console.error('DB initialization failed:', err);
                 return callback(err);
             });
+}
+
+const getDb = () => {
+    if (!_db) {
+        throw new Error('Db not initialized');
     }
+    return _db;
+}
+
+module.exports = {
+    initDb,
+    getDb
 }
