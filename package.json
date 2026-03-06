@@ -13,6 +13,10 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/calizayaalex5/ContactsActivity.git"
+  },
   "dependencies": {
     "body-parser": "^2.2.2",
     "dotenv": "^17.3.1",
