@@ -6,6 +6,8 @@ dotenv.config();
 const uri = process.env.MONGODB_URI;
 let _db; //variable para almacenar la conexion
 
+const uri_name = uri.split('@')[1].split('/')[0]; // Extrae el nombre del host de la URI
+
 const initDb = (callback) => {
     if (_db) {
         console.warn('Db is already initialized!');
@@ -14,7 +16,7 @@ const initDb = (callback) => {
         MongoClient.connect(uri)
             .then(client => {
                 _db = client.db();
-                console.log('DB initialized - connected to: ' + uri);
+                console.log('DB initialized - connected to: ' + uri_name);
                 return callback(null, _db);
             })
             .catch(err => {
