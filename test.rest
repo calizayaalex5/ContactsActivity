@@ -1,1 +1,7 @@
-!!
+//LOCALHOST
+
+### GET all users
+    http://localhost:3000/users
+
+### GET user by ID
+    http://localhost:3000/users/69670d785a1c77c0c1ea21af
