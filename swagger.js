@@ -5,7 +5,7 @@ const doc = {
         title: "Users API",
         description: "Api para actividad de CRUD con mongoDB en CSE341 Class"
     },
-    host: "https://contactsactivity.onrender.com/",
+    host: "contactsactivity.onrender.com/",
     schemes: ["https"]
 };
 
