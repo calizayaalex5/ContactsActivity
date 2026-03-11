@@ -5,8 +5,8 @@ const doc = {
         title: "Users API",
         description: "Api para actividad de CRUD con mongoDB en CSE341 Class"
     },
-    host: "localhost:3000",
-    schemes: ["http"]
+    host: "https://contactsactivity.onrender.com/",
+    schemes: ["https"]
 };
 
 const outputFile = './swagger.json'
