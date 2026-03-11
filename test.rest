@@ -5,3 +5,30 @@
 
 ### GET user by ID
     http://localhost:3000/users/69670d785a1c77c0c1ea21af
+
+### PUT user by ID
+    PUT http://localhost:3000/users/69670caf5a1c77c0c1ea21ad
+    Content-Type: application/json
+
+    {
+        "firstName": "Alex Bradley Josue",
+        "lastName": "Calizaya Condori",
+        "email": "calizayaalex15@gmail.com",
+        "favoriteColor": "verde",
+        "birthday": "2003-09-15"
+    }
+
+### POST user
+    POST http://localhost:3000/users
+    Content-Type: application/json
+
+    {
+        "firstName": "Barbara",
+        "lastName": "Silva",
+        "email": "barbararachel@gmail.com",
+        "favoriteColor": "verde",
+        "birthday": "19/01/2001"
+    }
+
+### DELETE user
+    DELETE http://localhost:3000/users/69b0f3862a306581de9e5cd5
