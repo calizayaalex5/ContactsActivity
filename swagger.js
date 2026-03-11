@@ -5,11 +5,11 @@ const doc = {
         title: "Users API",
         description: "Api para actividad de CRUD con mongoDB en CSE341 Class"
     },
-    host: "contactsactivity.onrender.com/",
+    host: "contactsactivity.onrender.com",
     schemes: ["https"]
 };
 
 const outputFile = './swagger.json'
-const endPointsFiles = ['./routes/users.js']
+const endPointsFiles = ['./routes/index.js']
 
 swaggerAutogen(outputFile, endPointsFiles, doc)

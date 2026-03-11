@@ -5,13 +5,26 @@
     "description": "Api para actividad de CRUD con mongoDB en CSE341 Class",
     "version": "1.0.0"
   },
-  "host": "contactsactivity.onrender.com/",
+  "host": "contactsactivity.onrender.com",
   "basePath": "/",
   "schemes": [
     "https"
   ],
   "paths": {
     "/": {
+      "get": {
+        "tags": [
+          "Hello World"
+        ],
+        "description": "",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/users/": {
       "get": {
         "description": "",
         "responses": {
@@ -61,7 +74,7 @@
         }
       }
     },
-    "/{id}": {
+    "/users/{id}": {
       "get": {
         "description": "",
         "parameters": [
