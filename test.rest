@@ -27,8 +27,8 @@
         "lastName": "Silva",
         "email": "barbararachel@gmail.com",
         "favoriteColor": "verde",
-        "birthday": "19/01/2001"
+        "birthday": "2001-01-19"
     }
 
 ### DELETE user
-    DELETE http://localhost:3000/users/69b0f3862a306581de9e5cd5
+    DELETE http://localhost:3000/users/69ba158d3bdca2026e8b4406
